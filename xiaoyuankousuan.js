@@ -1,7 +1,7 @@
 const num = 1000 //题数
 function Hookr2B(){
     Java.perform(function(){
-const JString= Java.use("java.lang.String")
+    const JString= Java.use("java.lang.String")
         let r2 = Java.use("com.fenbi.android.leo.utils.r2")
         r2.b.overload("[B").implementation = function (data) {
             data = JSON.parse(String.fromCharCode(...new Uint8Array(data)))
